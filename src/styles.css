@@ -1,1 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+body, html{
+  height: 100%;
+  background-color: lightblue;
+  margin: 0;
+}
+
+.wrapper {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 1280px;
+}

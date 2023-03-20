@@ -1,0 +1,12 @@
+<footer>
+  <nav>
+    <ul>
+      <ng-container *ngFor="let item of items">
+        <li>
+          <a (click)="setActive(item.label)" [ngClass]="{'active': item.active}">{{item.label}}</a>
+        </li>
+      </ng-container>
+    </ul>
+  </nav>
+  <p>&copy; Шмигельський Павло. ЧНУ. 2023 р.</p>
+</footer>

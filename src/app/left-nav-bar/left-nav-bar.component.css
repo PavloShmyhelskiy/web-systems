@@ -1,0 +1,27 @@
+.left-nav-bar {
+  width: 200px;
+  height: 100%;
+}
+
+.left-nav-bar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.left-nav-bar a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 18px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.left-nav-bar a:hover {
+  background-color: #a3a3a3;
+}
+
+.left-nav-bar a.active {
+  background-color: #888888;
+  color: yellow;
+}

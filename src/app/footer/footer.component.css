@@ -1,0 +1,34 @@
+footer {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  margin: 0 auto;
+}
+
+footer nav li {
+  margin-left: 20px;
+}
+
+footer nav a {
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px;
+}
+
+footer p {
+  font-size: 14px;
+}
+footer nav a:hover {
+  background-color: #a3a3a3;
+}
+footer nav a.active {
+  background-color: #888888;
+  color: yellow;
+}

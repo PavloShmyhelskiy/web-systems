@@ -1,0 +1,9 @@
+<div class="left-nav-bar">
+  <ul>
+    <ng-container *ngFor="let item of items">
+      <li>
+        <a (click)="setActive(item.label)" [ngClass]="{'active': item.active}">{{item.label}}</a>
+      </li>
+    </ng-container>
+  </ul>
+</div>

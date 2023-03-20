@@ -1,0 +1,26 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: rgb(86, 154, 177);
+  margin-bottom: 10px;
+}
+
+.logo img {
+  height: 60px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-info .userdata {
+  margin-right: 16px;
+  font-weight: bold;
+}
+
+.user-info img {
+  height: 50px;
+}
