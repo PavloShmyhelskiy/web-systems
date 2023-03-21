@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { Location } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
+import { UserService } from '../user.service';
 
 @Component({
   selector: 'app-item',
@@ -11,23 +11,11 @@ export class ItemComponent {
   user : any;
   id : any;
  
-  constructor(private location:Location, private route: ActivatedRoute){
+  constructor(private userService:UserService, private route: ActivatedRoute){
   }
  
   ngOnInit() {
     this.id = this.route.snapshot.paramMap.get('id');
-    this.user = this.location.getState();
+    this.user = this.userService.getUser(this.id);
   }
-  // ngOnInit() {
-  //   this.id = this.route.snapshot.paramMap.get('id');
-  //   this.route
-  //     .data
-  //     .subscribe(v =>{ 
-  //       this.user = v[this.id];
-  //       console.log(v[this.id])});
-  // }
-
-  // ngOnDestroy() {
-  //   this.user.unsubscribe();
-  // }
 }

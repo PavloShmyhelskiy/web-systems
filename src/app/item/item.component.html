@@ -1,1 +1,5 @@
-<span>{{user.name}} {{user.lastname}}  {{user.dateOfBirth}} {{user.salary}} {{user.workingHours}}</span>
+<p>Ім'я: {{user.name}} {{user.lastname}}</p>
+<p>Дата народження: {{user.dateOfBirth | date: 'dd.MM.yyyy'}}</p>
+<p>Заробітня плата: {{user.salary | currency}}</p>
+<p>Кількість робочих годин: {{user.workingHours | working}}</p>
+

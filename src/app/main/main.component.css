@@ -1,0 +1,16 @@
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+li:hover {
+    background-color: #a3a3a3;
+}
+
+ol{
+    display: flex;
+    flex-direction: column;
+}
+li{
+    padding: 6px;
+}
