@@ -3,18 +3,30 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
-import { LeftNavBarComponent } from './left-nav-bar/left-nav-bar.component';
 import { FooterComponent } from './footer/footer.component';
+import { AppRoutingModule } from './app-routing.module';
+import { NotFoundComponent } from './notfound/notfound.component';
+import { MainComponent } from './main/main.component';
+import { AboutusComponent } from './aboutus/aboutus.component';
+import { ServicesComponent } from './services/services.component';
+import { ContactsComponent } from './contacts/contacts.component';
+import { ItemComponent } from './item/item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    LeftNavBarComponent,
-    FooterComponent
+    FooterComponent,
+    NotFoundComponent,
+    MainComponent,
+    AboutusComponent,
+    ServicesComponent,
+    ContactsComponent,
+    ItemComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

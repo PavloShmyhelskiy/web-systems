@@ -1,4 +1,4 @@
-import {Component, EventEmitter, Input, Output} from '@angular/core';
+import {Component, Input} from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -12,8 +12,6 @@ export class HeaderComponent {
   } = {
     name: 'userName'
   }
-
-  @Output("show") show: EventEmitter<any> = new EventEmitter();
 
   constructor() {
   }

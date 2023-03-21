@@ -6,6 +6,10 @@ header {
   background-color: rgb(86, 154, 177);
   margin-bottom: 10px;
 }
+.navigation{
+  display: flex;
+  align-items: center;
+}
 
 .logo img {
   height: 60px;
@@ -23,4 +27,25 @@ header {
 
 .user-info img {
   height: 50px;
+}
+nav {
+  display: flex;
+  margin-left: 30px;
+}
+header a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+header a:hover {
+  background-color: #a3a3a3;
+}
+
+header a.active {
+  background-color: #888888;
+  color: yellow;
 }

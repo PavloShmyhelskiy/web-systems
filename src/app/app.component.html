@@ -1,7 +1,9 @@
-<app-header [userData]="user" (show)="show()"></app-header>
+<app-header [userData]="user"></app-header>
 <div class="main">
-  <app-left-nav-bar [items]="menuItems"></app-left-nav-bar>
-  <div class="content">
+  <router-outlet>
+
+  </router-outlet>
+  <!-- <div class="content">
     <button (click)="changeView()" class="view-changer">
       Change view
     </button>
@@ -29,6 +31,6 @@
     <div *ngIf="showText" class="hello-world">
       <p>Привіт світ!</p>
     </div>
-  </div>
+  </div> -->
 </div>
-<app-footer [items]="menuItems"></app-footer>
+<app-footer></app-footer>

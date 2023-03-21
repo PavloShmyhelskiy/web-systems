@@ -1,34 +1,36 @@
 footer {
-  padding: 20px;
+  width: 1280px;
+  position: absolute;
+  bottom: 0px;
+  padding: 20px 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: rgb(86, 154, 177);
 }
 
-footer nav ul {
-  list-style-type: none;
-  padding: 0;
-  display: flex;
-  margin: 0 auto;
-}
-
-footer nav li {
+nav {
   margin-left: 20px;
+  display: flex;
+}
+footer a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  transition: background-color 0.3s ease-in-out;
 }
 
-footer nav a {
-  text-decoration: none;
-  font-size: 18px;
-  padding: 10px;
+footer a:hover {
+  background-color: #a3a3a3;
+}
+
+footer a.active {
+  background-color: #888888;
+  color: yellow;
 }
 
 footer p {
   font-size: 14px;
-}
-footer nav a:hover {
-  background-color: #a3a3a3;
-}
-footer nav a.active {
-  background-color: #888888;
-  color: yellow;
 }

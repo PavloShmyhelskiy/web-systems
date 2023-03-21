@@ -1,0 +1,11 @@
+<main>
+    <ng-container>
+        <ol [ngStyle]="{'background-color': '', 'font-size': '30px'}">
+            <li *ngFor="let user of users">
+                <a [routerLink]="['/users', user.id]" [state] = "users[user.id]">
+                  {{ user.name }} {{ user.lastname }}
+                </a>
+            </li>
+        </ol>
+      </ng-container>
+</main>

@@ -1,12 +1,25 @@
 <footer>
   <nav>
-    <ul>
-      <ng-container *ngFor="let item of items">
-        <li>
-          <a (click)="setActive(item.label)" [ngClass]="{'active': item.active}">{{item.label}}</a>
-        </li>
-      </ng-container>
-    </ul>
+    <a class="button"
+       routerLink="/home"
+       routerLinkActive="active">
+      Home
+    </a>
+    <a class="button"
+       routerLink="/about"
+       routerLinkActive="active">
+      About us
+    </a>
+    <a class="button"
+       routerLink="/services"
+       routerLinkActive="active">
+      Services
+    </a>
+    <a class="button"
+       routerLink="/contacts"
+       routerLinkActive="active">
+      Contacts
+    </a>
   </nav>
   <p>&copy; Шмигельський Павло. ЧНУ. 2023 р.</p>
 </footer>
