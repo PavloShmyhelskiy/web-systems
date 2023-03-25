@@ -54,7 +54,7 @@
             <label for="phone">*Phone: </label>
             <input id="phone" type="text" formControlName="phone" [ngClass]="isValid('phone')" pattern="\+?3?8?(0\d{9})">
         </li>
-        <button type="submit" >Submit</button>
+        <button type="submit" [disabled]="!userForm.valid">Submit</button>
         </ul>
     </form>
 </div>
