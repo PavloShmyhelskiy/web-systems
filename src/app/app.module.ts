@@ -12,6 +12,8 @@ import { ServicesComponent } from './services/services.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { ItemComponent } from './item/item.component';
 import { WorkingPipe } from './working.pipe';
+import { NewUserComponent } from './new-user/new-user.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,11 +26,14 @@ import { WorkingPipe } from './working.pipe';
     ServicesComponent,
     ContactsComponent,
     ItemComponent,
-    WorkingPipe
+    WorkingPipe,
+    NewUserComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

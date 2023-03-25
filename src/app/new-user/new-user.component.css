@@ -1,0 +1,28 @@
+h3{
+    margin: 0;
+}
+.invalid{
+    border: 2px solid red;
+}
+.valid{
+    border: 3px solid lightgreen;
+}
+li{
+    margin: 5px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+}
+.subjectsWrapper h3{
+  margin-bottom: 5px;
+}
+.subjectControll{
+    margin-bottom: 5px;
+}
+.subjects{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+}

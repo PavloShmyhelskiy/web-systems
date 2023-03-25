@@ -7,6 +7,7 @@ import { ContactsComponent } from './contacts/contacts.component';
 import { ItemComponent } from './item/item.component';
 import { MainComponent } from './main/main.component';
 import { Title } from '@angular/platform-browser';
+import { NewUserComponent } from './new-user/new-user.component';
 
 const routes:Routes = [
   {path: 'home', component: MainComponent, title: 'Home'},
@@ -14,6 +15,7 @@ const routes:Routes = [
   {path: 'services', component: ServicesComponent, title: 'Services'},
   {path: 'contacts', component: ContactsComponent, title: 'Contacts'},
   {path: 'users/:id', component: ItemComponent, title: 'User'},
+  {path: 'newuser', component: NewUserComponent, title: 'Add new User'},
   {path: '', redirectTo: 'home', pathMatch: 'full'},
   {path: '**', component: NotFoundComponent, title: '404'}
 ];

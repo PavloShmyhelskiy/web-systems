@@ -1,5 +1,6 @@
 <main>
     <ng-container>
+        <button (click)="navigateToNewUser()">Add new User</button>
         <ol [ngStyle]="{'background-color': '', 'font-size': '30px'}">
             <li *ngFor="let user of users">
                 <a [routerLink]="['/users', user.id]">

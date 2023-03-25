@@ -1,0 +1,60 @@
+<div>
+    <form id="newUserForm" [formGroup]="userForm" (ngSubmit)="onSubmit()">
+        <ul style="list-style: none;">
+        <li>
+            <label for="name">*First Name: </label>
+            <input id="name" type="text" formControlName="name" [ngClass]="isValid('name')">
+        </li>
+        <li>
+            <label for="last-name">*Last Name: </label>
+            <input id="last-name" type="text" formControlName="lastName" [ngClass]="isValid('lastName')">
+        </li>
+        <li>
+            <label for="type">Type: </label>
+            <select (change)="changeType($event)" formControlName="type">
+                <option *ngFor="let type of types" value="{{type}}">
+                    {{ type }}
+                </option>
+            </select>
+        </li>
+        <li>
+            <label for="email">*Email: </label>
+            <input id="email" type="text" formControlName="email" [ngClass]="isValid('email')">
+        </li>
+        <li>
+            <label for="password">*Password: </label>
+            <input id="password" type="text" formControlName="password" [ngClass]="isValid('password')" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}">
+        </li>
+        <li>
+            <label for="confirm">*Confirm Pass: </label>
+            <input id="confirm" type="text" formControlName="confirmPass" [ngClass]="isValid('confirmPass')" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}">
+        </li>
+        <li>
+            <div formArrayName="subjects" class="subjectsWrapper">
+                <h3>Subjects</h3>
+                <button type="button" (click)="addSubject()" class="subjectControll">Add subject</button><button type="button" (click)="clearSubjects()" class="subjectControll">Clear Subjects</button>
+                <div *ngFor="let subj of subjects.controls; index as i" class="subjects">
+                    <label for="subj-{{i}}">Subject {{i+1}}</label>
+                    <div>
+                        <input type="text" id="subj-{{i}}" [formControlName]="i">
+                        <button (click)="removeSubject(i)">X</button>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <label for="description">Description: </label>
+            <textarea id="description" formControlName="description"></textarea>
+        </li>
+        <li>
+            <label for="sex">Sex: {{userForm.value.sex}}</label>
+            <input id="sex" type="checkbox" (change)="changeSex($event)" checked>
+        </li>
+        <li>
+            <label for="phone">*Phone: </label>
+            <input id="phone" type="text" formControlName="phone" [ngClass]="isValid('phone')" pattern="\+?3?8?(0\d{9})">
+        </li>
+        <button type="submit" >Submit</button>
+        </ul>
+    </form>
+</div>

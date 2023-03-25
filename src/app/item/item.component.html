@@ -1,5 +1,8 @@
 <p>Ім'я: {{user.name}} {{user.lastname}}</p>
-<p>Дата народження: {{user.dateOfBirth | date: 'dd.MM.yyyy'}}</p>
-<p>Заробітня плата: {{user.salary | currency}}</p>
-<p>Кількість робочих годин: {{user.workingHours | working}}</p>
-
+<p>Тип: {{user.type}}</p>
+<p>Email: {{user.email}}</p>
+<p>Пароль: {{user.password}}</p>
+<p>Предмети: {{user.subjects.join(', ')}}</p>
+<p>Опис: {{user.description}}</p>
+<p>Стать: {{user.sex}}</p>
+<p>Телефон: {{user.phone}}</p>

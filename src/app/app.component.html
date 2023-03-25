@@ -3,34 +3,5 @@
   <router-outlet>
 
   </router-outlet>
-  <!-- <div class="content">
-    <button (click)="changeView()" class="view-changer">
-      Change view
-    </button>
-    <ng-container *ngIf="listView; else cards">
-      <ul [ngStyle]="{'background-color': '', 'font-size': '30px'}">
-        <ng-container *ngFor="let item of items">
-          <li *ngIf="!item.hide" ngSwitch="{{item.type}}">
-            <span *ngSwitchCase="'phone'" [ngStyle]="{'color': '#8383a8'}">{{item.name}} {{item.price}}$ {{item.memory}}</span>
-            <span *ngSwitchCase="'pc'" [ngStyle]="{color: 'orange'}">{{item.name}} {{item.price}}$ {{item.videocard}}</span>
-            <span *ngSwitchDefault [ngStyle]="{color: 'green'}">{{item.name}} {{item.price}}$</span>
-          </li>
-        </ng-container>
-      </ul>
-    </ng-container>
-    <ng-template #cards>
-      <div class="cards">
-        <ng-container *ngFor="let item of items">
-          <div class="card" *ngIf="!item.hide" [ngClass]="item.type === 'phone' ? 'phone' :
-                                                          (item.type === 'pc' ? 'pc' : 'none')">
-            {{item.name}} {{item.price}}$
-          </div>
-        </ng-container>
-      </div>
-    </ng-template>
-    <div *ngIf="showText" class="hello-world">
-      <p>Привіт світ!</p>
-    </div>
-  </div> -->
 </div>
 <app-footer></app-footer>
